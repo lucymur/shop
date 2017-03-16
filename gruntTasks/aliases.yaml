@@ -1,0 +1,19 @@
+# default: []
+
+start:
+  description: 'Run watcher, run sever, build dev'
+  tasks:
+    - 'sass:dev'
+    - 'processhtml:dev'
+    - 'copy:dev'
+    - 'open:dev'
+    - 'express:dev'
+    - 'watch:dev'
+
+build:
+  description: 'Build project progect'
+  tasks:
+    - 'clean:dev'
+    - 'sass:dev'
+    - 'processhtml:dev'
+    - 'copy:dev'

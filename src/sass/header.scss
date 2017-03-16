@@ -1,0 +1,105 @@
+.header {
+	border-top: 6px solid #c32428;
+	&_wrapper {
+	    padding: 10px 13px;
+	    background: #fff;
+	}
+
+	&_logo {
+		display: inline-block;
+		float: left;
+	}
+
+	&_delivery {
+	    text-align: right;
+	    margin-left: 54px;
+	    display: inline-block;
+	    font-weight: bold;
+	    float: left;
+
+	    span {
+	    font-size: 16px;
+        text-align: right;
+	    }
+	}
+
+	&_info {
+        display: inline-block;
+        float: left;
+        margin-left: 54px;
+
+        a {
+        	text-decoration: none;
+        }
+
+        .capital {
+        	font-size: 24px;
+        	text-indent: 2px;
+        	font-weight: normal;
+        }
+
+        span {
+            font-size: 14px;
+		    line-height: normal;
+		    font-weight: bold;
+        }
+
+        .info_img {
+            margin-right: 13px;
+            margin-top: 5px;
+        }
+
+        .back_call {
+        	color: #c22328;
+        	font-size: 14px;
+        	border-bottom: 2px doshed red;
+            border-bottom: 2px dotted #c22328;
+            padding: 1px;
+        }
+	}
+
+	&_basket {
+	   display: inline-block;
+       width: 219px;
+       border: 5px solid #fed900;
+       padding: 14px 20px;
+       margin-left: 54px;
+	}
+
+	&_contain {
+		display: inline-block;
+		margin-top: 10px;
+	}
+}
+
+.all_contacts {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 1px 7px;
+    background: #fed900;
+
+     .all_img {
+     	float: right;
+     	margin-left: 18px;
+        margin-top: 4px;
+     }
+
+     a {
+     	color: #333333;
+     }   	
+  }
+
+.basket_field {
+
+	.shopping {
+        border-bottom: 2px dotted black;
+        font-size: 19px;
+        margin-left: 10px;
+        display: inline-block;
+	}
+
+	.info_basket {
+		display: inline-block;
+        font-size: 15px;
+	}
+}
