@@ -6,13 +6,13 @@
 	}
 
 	&_logo {
-		display: inline-block;
 		float: left;
+        width: 370px;
 	}
 
 	&_delivery {
 	    text-align: right;
-	    margin-left: 54px;
+        width: 144px;
 	    display: inline-block;
 	    font-weight: bold;
 	    float: left;
@@ -27,6 +27,7 @@
         display: inline-block;
         float: left;
         margin-left: 54px;
+        width: 233px;
 
         a {
         	text-decoration: none;
@@ -63,12 +64,13 @@
        width: 219px;
        border: 5px solid #fed900;
        padding: 14px 20px;
-       margin-left: 54px;
+       float: right;
 	}
 
 	&_contain {
-		display: inline-block;
 		margin-top: 10px;
+        overflow: hidden;
+        margin-left: 409px;
 	}
 }
 
@@ -79,9 +81,7 @@
     background: #fed900;
 
      .all_img {
-     	float: right;
      	margin-left: 18px;
-        margin-top: 4px;
      }
 
      a {
@@ -95,7 +95,6 @@
         border-bottom: 2px dotted black;
         font-size: 19px;
         margin-left: 10px;
-        display: inline-block;
 	}
 
 	.info_basket {

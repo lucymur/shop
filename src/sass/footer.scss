@@ -31,39 +31,41 @@
 		.footer_menu {
 			float: left;
 			padding-left: 30px;
-			margin-right: 105px;
+			width: 239px;
 			margin-bottom: 0;
 		}
 
-		.paddleft {
-			padding-left: 61px;
-		}
 
 		.footer_menu__item {
 			list-style-type: none;
 			padding: 2px 0;
+		}  
 
-		}
 		.footer_menu__link {
 			display: inline-block;
 			color: #333333; 
 			font-weight: bold;
+			padding: 3px 4px;
 			text-decoration: none;
 			font-size: 13px;
+			&:hover {
+			 background-color: #c32429;
+			 color: #fff;
+		    }
 		}
 	}
 }
 
 .menu_wrapper {
-    display: inline-block;
     float: left;
     padding-bottom: 5px;
 }
 
 .social {
-    display: inline-block;
-    margin-top: 23px;
+    margin-top: 18px;
+    width: 300px;
     border-left: 0.5px solid #333333;
+    overflow: hidden;
     background: transparent;
     float: right;
 

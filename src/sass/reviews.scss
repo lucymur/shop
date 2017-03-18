@@ -1,0 +1,19 @@
+.reviews {
+	background: #fed900;
+    top: 675px;
+    z-index: 90;
+    left: 0;
+    padding: 5px 18px;
+    transform: rotate(270deg);
+    position: fixed;
+    a {
+    	text-decoration: none;
+    	color: #333333;
+    	font-size: 16px;
+    	font-weight: bold;
+    }
+
+    img {
+    	margin-right: 7px;
+    }
+}
