@@ -36,6 +36,8 @@ module.exports = function () {
 			html: [
 				'index.html',
                 'contact.html',
+                'katalog.html',
+                
 			],
 
 			sass: {

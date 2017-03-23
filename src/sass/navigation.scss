@@ -1,7 +1,7 @@
 
 .menu {
 	background: #e5e5e5;
-	border-top: 4px solid #333333;
+	border-top: 3px solid #333333;
 	border-bottom: 1px solid #333333;
 	margin: 0 13px;
 
@@ -13,18 +13,23 @@
 		padding-left: 0;
 		overflow: hidden;
         margin-bottom: 0;
+        width: 100%;
+        display: table;
 	}
 
 	li {
 		list-style: none;
-		float: left;
+		display: table-cell;
+		padding: 8px;
+		text-align: center;
 	} 
 
 	a {
-		font-size: 15px;
+		font-size: 14px;
 	    text-decoration: none;
-	    padding: 10px 59px;
 	    display: inline-block;
+	    line-height: 36px;
+	    font-family: verdana;
 	    color: #333333;
 	    font-weight: bold;
 	}

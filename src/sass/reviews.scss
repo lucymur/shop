@@ -1,10 +1,15 @@
 .reviews {
 	background: #fed900;
-    top: 675px;
+    top: 50%;
     z-index: 90;
     left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 88px;
+    height: 33px;
     padding: 5px 18px;
-    transform: rotate(270deg);
+    transform: rotate(-90deg);
+    transform-origin: top left;
     position: fixed;
     a {
     	text-decoration: none;

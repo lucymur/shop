@@ -15,8 +15,7 @@
 		.footer_nav__item {
 			list-style-type: none;
 			float: left;
-			background: #fed900;
-			margin-right: 157px;
+			width: 256px;
 			font-weight: bold;
 			font-size: 17px;
 		}
@@ -26,28 +25,32 @@
 			display: inline-block;
 			text-decoration: none;
 			color: #333333;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: verdana;
+			background: #fed900;
 		}
 
 		.footer_menu {
 			float: left;
 			padding-left: 30px;
-			width: 239px;
+			width: 258px;
 			margin-bottom: 0;
 		}
 
 
 		.footer_menu__item {
 			list-style-type: none;
-			padding: 2px 0;
 		}  
 
 		.footer_menu__link {
 			display: inline-block;
 			color: #333333; 
+			font-family: verdana;
 			font-weight: bold;
 			padding: 3px 4px;
 			text-decoration: none;
-			font-size: 13px;
+			font-size: 12px;
 			&:hover {
 			 background-color: #c32429;
 			 color: #fff;
@@ -75,7 +78,7 @@
     	h4 {
     		font-size: 12px;
     		margin-bottom: 12px;
-    		display: inline-block;
+    		font-family: verdana;
     	}
 
     	ul {
@@ -98,6 +101,9 @@
     		display: inline-block;
     	    background: #e5e5e5;
             font-size: 11px;
+            line-height: 18px;
+            font-family: verdana;
+            font-size: 12px;
             font-weight: bold;
             padding: 8px 60px 40px 8px;
             display: block;
