@@ -1,3 +1,16 @@
+.dropdown {
+    display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+
+    &__item {
+        display: block;
+        background: #ccc;
+        border: 1px solid #000;
+    }
+}
+
 
 .menu {
 	background: #e5e5e5;
@@ -7,33 +20,38 @@
 
 	&_overlay {
 		padding: 0 13px;
-		overflow: hidden;
 
-	ul {
-		padding-left: 0;
-		overflow: hidden;
-        margin-bottom: 0;
-        width: 100%;
-        display: table;
-	}
+		& > ul {
+			padding-left: 0;
+			margin-bottom: 0;
+			width: 100%;
+			display: table;
+		
+			& > li {
+				position: relative;
+				list-style: none;
+				display: table-cell;
+				padding: 8px;
+				text-align: center;
 
-	li {
-		list-style: none;
-		display: table-cell;
-		padding: 8px;
-		text-align: center;
-	} 
+				&:hover {
+					.dropdown {
+						display: block;
+					}
+				}
+			} 
+		}
 
-	a {
-		font-size: 14px;
-	    text-decoration: none;
-	    display: inline-block;
-	    line-height: 36px;
-	    font-family: verdana;
-	    color: #333333;
-	    font-weight: bold;
-	}
-  }
+		a {
+			font-size: 14px;
+			text-decoration: none;
+			display: inline-block;
+			line-height: 36px;
+			font-family: verdana;
+			color: #333333;
+			font-weight: bold;
+		}
+  	}
 }
 
 .second_menu {

@@ -16,12 +16,12 @@ module.exports = function () {
 				vendor: [
 					'jquery/dist/jquery.min.js',
 					'materialize-css/dist/js/materialize.min.js',
+					'bxslider/dist/jquery.bxslider.js',
           			'fancybox/dist/js/jquery.fancybox.pack.js'
 				],
 
 				source: [
-					'javascript/scripts.js',
-					'javascript/article.js'
+					'javascript/scripts.js'
 				]
 			},
 
@@ -29,7 +29,8 @@ module.exports = function () {
 				vendorOut: 'stylesheets/vendor.min.css',
 
 				vendor: [
-					'fancybox/dist/css/jquery.fancybox.css'
+					'fancybox/dist/css/jquery.fancybox.css',
+					'bxslider/dist/jquery.bxslider.min.css'
 				]
 			},
 
