@@ -9,6 +9,7 @@
 	}
 	&__wrapper {
 		margin-top: 20px;
+		position: relative;
 	}
 }
 
@@ -46,7 +47,7 @@
 	}
 
 	a {
-		display: inline-block;
+		display: block;
 		padding: 6px 0;
 		text-decoration: none;
 		font-family: verdana;
@@ -64,7 +65,8 @@
 
 	span {
 		display: inline-block;
-		padding: 6px 15px 5px 16px;
+		padding: 0px 15px px 4px;
+		font-weight: bold;
 	}
 
 	.appearancee {
@@ -277,12 +279,10 @@ textarea.form-control {
 	background: transparent;
     margin-left: 275px;
     overflow: hidden;
-    margin-bottom: 50px;
     a {
     	text-decoration: none;
     	color: black;
     	font-size: 15px;
-    	padding: 0 4px;
     }
 
     h3 {
@@ -311,10 +311,6 @@ textarea.form-control {
 
 }
 
-.fl_right {
-	float: right;
-	width: 235px;
-}
 
 .linkcolor {
 	padding: 0 4px;
@@ -328,6 +324,16 @@ textarea.form-control {
 
 .allpages {
 	margin-top: 3px;
+}
+
+.pagel {
+	width: 300px;
+	float: left;
+}
+
+.pageri {
+	overflow: hidden;
+    text-align: right;
 }
 
 
@@ -498,20 +504,34 @@ input:checked ~ .test {
 	font-weight: bold;
 }
 
+.color_selection {
+	width: 165px;
+	margin: 0 auto;
+	float: left;
+	li {
+		border: none;
+		&:hover {
+		  border-left: none; 
+		  background: none;
+		}
+	}
+}
 
 
 .cena, .razmer, .cvet {
-	width: 200px;
 	height: 30px;
-	margin-bottom: 3px;
-	border: 1px solid #c32429;
+	margin-bottom: 8px;
+	border: 1.5px solid #c32429;
 }
 
+.formcom {
+	overflow: hidden;
+}
 
 .commentform {
     font-size: 15px;
     float: left;
-    margin-right: 15px;
+    margin-right: 7px;
     input {
     	    background: #fff;
 		    border: 1px solid #262626;
@@ -519,7 +539,7 @@ input:checked ~ .test {
 		    font-size: 12px;
 		    padding: 4px;
 		    height: 24px;
-		    width: 68px;
+		    width: 64px;
 		    color: #000000;
     }
 
@@ -534,17 +554,36 @@ input:focus {
 	outline : none;
 }
 
+label {
+	margin-bottom: 0;
+}
+
+
+.colsel {
+	overflow: hidden;
+	width: 154px;
+	margin: 0 auto;
+
+}
+
 .btn {
 	background-color: #c32429;
 	border-radius: 0;
 	border: none;
-	padding: 2px 11px;
+	padding: 0px 9px;
+	float: right;
 	a {
 		text-decoration: none;
 		color: #fff;
 	    font-size: 12px;
         font-family: verdana;
+        padding:4px 0;
 	}
+}
+
+.spisok {
+	max-height: 288px;
+	overflow: auto;
 }
 
 .color_selection {
@@ -552,122 +591,87 @@ input:focus {
 	li {
         float: left;
         list-style-type: none;
-        margin-right: 4px;
-        border: 1px solid rgba(204, 204, 204, 0.63);
+        margin-right: 7px;
 	}
 
 	a {
-
+		padding: 3px 0;
 	}
-
-	 .col_z {
-	    height: 20px;
-	    width: 20px;
-	    background: #dbdbc8;
-	    display: block;
-	}
-
-	 .col_b {
-	    height: 20px;
-	    width: 20px;
-	    background: #fff;
-	    display: block;
-	}
-
-	 .col_g {
-	    height: 20px;
-	    width: 20px;
-	    background: #a7c1cd;
-	    display: block;
-	}
-
-	.col_j {
-	    height: 20px;
-	    width: 20px;
-	    background: #eeee43;
-	    display: block;
-	}
-
-	.col_ze {
-	    height: 20px;
-	    width: 20px;
-	    background: #4a7e27;
-	    display: block;
-	}
-
-	.col_co {
-	    height: 20px;
-	    width: 20px;
-	    background: #833434;
-	    display: block;
-	}
-
-	.col_cr {
-	    height: 20px;
-	    width: 20px;
-	    background: #ca2424;
-	    display: block;
-	}
-
-	.col_mor {
-	    height: 20px;
-	    width: 20px;
-	    background: #e6b042;
-	    display: block;
-	}
-
-	.col_roz {
-	    height: 20px;
-	    width: 20px;
-	    background: #ecc8d0;
-	    display: block;
-	}
-
-	.col_ser {
-	    height: 20px;
-	    width: 20px;
-	    background: #8b8b8b;
-	    display: block;
-	}
-
-	.col_sin {
-	    height: 20px;
-	    width: 20px;
-	    background: #1f1fe3;
-	    display: block;
-	}
-
-	.col_fl {
-	    height: 20px;
-	    width: 20px;
-	    background: #c682d8;
-	    display: block;
-	}
-
-	.col_ch {
-	    height: 20px;
-	    width: 20px;
-	    background: #1e1e1e;
-	    display: block;
-	}
-
-
 }
+
+
+.colc {
+	    height: 22px;
+	    width: 22px;
+	    display: block;
+	}
 
 .reset {
     font-size: 13px;
     background: #fed900;
     font-family: verdana;
     font-weight: bold;
-    padding: 4px 30px;
+    padding: 0px 25px;
      a {
      	 color: #000;
      	 text-decoration: none;
      }
 }
 
+.resetwrapp {
+	text-align: center;
+	margin-top: 38px;
+}
+
 .to_top {
 	padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 8%;
     background: transparent;
     border: none;
+    a {
+    	display: inline-block;
+    	padding: 0;
+    }
+
+    img {
+    	margin: 0;
+    }
+}
+
+         //accordion//
+
+.accordion {
+	h3 {
+		background-color: #fed900;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 6px 13px;
+	}
+}
+
+
+//navigationkatalog.html
+
+
+.menu_overlay {
+	ul {
+
+	}
+
+	li {
+		span {
+			height: 16px;
+			width: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            background-position: -32px -1px;
+            background-repeat: no-repeat;
+		}
+	}
+
+	a {
+
+	}
 }

@@ -31,7 +31,7 @@
 				position: relative;
 				list-style: none;
 				display: table-cell;
-				padding: 8px;
+				padding: 4px;
 				text-align: center;
 
 				&:hover {
@@ -58,10 +58,7 @@
 	background: #fed900;
 	border-bottom: 1px solid #c32429;
 	margin: 0 13px;
-	a {
-		padding-left: 8px;
-	}
-
+	
 	.search {
 		padding: 5px;
 		float: right;

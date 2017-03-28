@@ -12,9 +12,10 @@
 
 	&_delivery {
 	    text-align: right;
-       width: 144px;
+      width: 162px;
 	    display: inline-block;
 	    font-weight: bold;
+      line-height: normal;
 	    float: left;
 
 	    span {
@@ -70,9 +71,9 @@
 	}
 
 	&_contain {
-		margin-top: 10px;
-        overflow: hidden;
-        margin-left: 409px;
+		  margin-top: 10px;
+      margin-left: 395px;
+      overflow: hidden;
 	}
 }
 
