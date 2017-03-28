@@ -1,3 +1,13 @@
 <% for ( var index in devJsFiles ) { %>
 <script type="text/javascript" src="<%= devJsFiles[index] %>"></script>
 <% } %>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    $( ".accordion" ).accordion();
+
+    $('.slider').bxSlider({
+        minSlides: 6
+    })
+</script>

@@ -661,17 +661,16 @@ label {
 	}
 
 	li {
-		span {
+	}
+
+	a {
+		&:after {
+			content: "";
 			height: 16px;
 			width: 16px;
             display: inline-block;
             vertical-align: middle;
-            background-position: -32px -1px;
-            background-repeat: no-repeat;
+			background: url(../../images/icons/ui-icons_444444_256x240.png) no-repeat -32px -1px;
 		}
-	}
-
-	a {
-
 	}
 }
