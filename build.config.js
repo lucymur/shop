@@ -38,6 +38,8 @@ module.exports = function () {
 				'index.html',
                 'contact.html',
                 'katalog.html',
+                'photogallery.html',
+                'zakazbezregistr.html',
                 
 			],
 
