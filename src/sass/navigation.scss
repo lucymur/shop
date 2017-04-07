@@ -1,48 +1,47 @@
 .dropdown {
-    display: none;
+	display: none;
 	position: absolute;
 	top: 100%;
 	left: 0;
-
-    &__item {
-        display: block;
-        background: #ccc;
-        border: 1px solid #000;
-    }
+	&__item {
+		display: block;
+		background: #ccc;
+		border: 1px solid #000;
+	}
 }
 
 .navm {
 	text-align: center;
 }
-.menu {                                                 
+
+.menu {
 	background: #e5e5e5;
 	border-top: 3px solid #333333;
 	border-bottom: 1px solid #333333;
 	margin: 0 13px;
-
 	&_overlay {
 		padding: 0 13px;
-
-		& > ul {
+		&>ul {
 			padding-left: 0;
 			margin-bottom: 0;
 			width: 100%;
 			display: table;
-		
-			& > li {
+			&>li {
 				position: relative;
 				list-style: none;
 				display: table-cell;
 				padding: 4px;
-
 				&:hover {
 					.dropdown {
 						display: block;
 					}
+					.mo_link {
+						background: #c32429;
+						color: #fff;
+					}
 				}
-			} 
+			}
 		}
-
 		a {
 			font-size: 14px;
 			text-decoration: none;
@@ -52,41 +51,65 @@
 			color: #333333;
 			font-weight: bold;
 		}
-  	}
+	}
+}
+
+.navigation {
+	padding-left: 0;
+	margin-bottom: 0;
+	width: 100%;
+	display: table;
+}
+
+.navigation__item {
+	position: relative;
+	list-style: none;
+	display: table-cell;
+	padding: 4px;
+	a {
+		font-size: 14px;
+		text-decoration: none;
+		display: inline-block;
+		line-height: 36px;
+		font-family: verdana;
+		color: #333333;
+		font-weight: bold;
+	}
+	&:hover {
+		.dropdown {
+			display: block;
+		}
+	}
 }
 
 .second_menu {
 	background: #fed900;
 	border-bottom: 1px solid #c32429;
 	margin: 0 13px;
-		.input {
-			border-radius: 14px;
-		    border: 0;
-		    padding: 4px;
-		    border: 1px solid rgba(158, 158, 158, 0.69);
-		    width: 228px;
-
-		    &:focus {
-		    	outline: none;
-		    }
-
+	.input {
+		border-radius: 14px;
+		border: 0;
+		padding: 4px;
+		border: 1px solid rgba(158, 158, 158, 0.69);
+		width: 228px;
+		&:focus {
+			outline: none;
 		}
-
-		img {
-		    	margin-left: 3px;
-		    	width: 16px;
-		    }
-	  }
+	}
+	img {
+		margin-left: 3px;
+		width: 16px;
+	}
+}
 
 .searchbtn {
 	padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
 }
 
-
-
-
-
-
+.menu_overlay > ul > li:hover .mo_link {
+	background: #c32429;
+	color: #fff;
+}
