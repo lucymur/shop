@@ -1,0 +1,47 @@
+.checkbox {
+    display: inline-block;
+    font-style: normal;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    background: #fff;
+    border-radius: 3px;
+    color: #A9A9A9;
+    border: 1px solid #A9A9A9;
+    vertical-align: middle;
+
+    & + * {
+        margin-right: 5px;
+    }
+
+    input {
+        display: none;
+
+        &:checked {
+            & ~ .checkbox-icon {
+                &:before {
+                    content: "\f00c";
+                }
+            }
+        }
+    }
+
+    &.checked {
+        .checkbox-icon {
+            &:before {
+                content: "\f00c";
+            }
+        }
+    }
+}
+
+.checkbox-icon {
+    font-family: FontAwesome;
+    font-style: normal;
+    display: block;
+    font-size: 12px !important;
+    width: 13px;
+    margin: auto;
+}
