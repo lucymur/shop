@@ -40,6 +40,9 @@ module.exports = function () {
                 'katalog.html',
                 'photogallery.html',
                 'zakazbezregistr.html',
+                'form-reviews.html',
+                'reviews_main.html',
+
                 
 			],
 

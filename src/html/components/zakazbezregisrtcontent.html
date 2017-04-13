@@ -2,39 +2,40 @@
 	<div class="content_field">
 		<h3>БЫСТРЫЙ ЗАКАЗ</h3>
 		<h4 class="forma_z">КОРОТКАЯ ФОРМА ЗАКАЗА</h4>
-		<div class="formpage">
-		 	<div class="wrapperr">
+		<form class="form_overlay mar_bottom">
+			<div class="formpage">
 				<div class="form_wrapp">
-			    <h4 class="kont_tel">КОНТАКТНЫЙ ТЕЛЕФОН</h4>
-				<form>
-				    <input type="text" class="fieldd">
-				    <input type="email" class="fieldd field_size">
-                </form>
-                <p class="infa_about__bodies"><span><em>Введите свой номер телефона без пробелов. Наш менеджер свяжется с вами для уточнения адреса и деталей оплаты.</em></span></p>
+					 <h4 class="kont_tel">КОНТАКТНЫЙ ТЕЛЕФОН</h4>
+					<form>
+						  <input type="text" class="fieldd">
+						  <input type="email" class="fieldd field_size">
+		             </form>
+		              <p class="infa_about__bodies"><span><em>Введите свой номер телефона без пробелов. Наш менеджер свяжется с вами для уточнения адреса и деталей оплаты.</em></span></p>
+				</div>
+					<div class="form_btn">
+			              <button class="form_btn__bt">ПОДТВЕРДИТЬ И ЗАКАЗАТЬ</button>
+		            </div>
 			   </div>
-			    <div class="form_btn">
-	                <button class="form_btn__bt">
-	                    <span>
-	                        <a href="" class="form_btn__link btn_size">ПОДТВЕРДИТЬ И ЗАКАЗАТЬ</a>
-	                    </span>
-	                </button>
-                </div>
-		    </div>
-		</div>
+		  </form>
 		<h4 class="forma_z">РАСШИРЕННАЯ ФОРМА ЗАКАЗА</h4>
-		<div class="formpage formpage_bottom">
-		 <div class="wrapperr">
+	<form class="form_overlay marbottom">
+		<div class="formpage">
 			<div class="form_wrapp">
 			  <div class="wrapp_left">
 				<form>
-				  <fieldset>
-				    <p><label class="correction" for="name"><em>ФИО<em class="star">*</em></em></label><input class="mar_l" type="text"></p>
-				    <p><label class="correction" for="email"><em>Телефон<em class="star">*</em></em></label><input class="marr_l" type="text"></p>
-				    <p><label class="correction" for="email"><em>Адрес доставки<em class="star">*</em><br>(город, улица,<br> дом, подъезд,<br> квартира)</em></label><textarea class="maar_l"></textarea></p>
-				  </fieldset>
+				  <div class="ololo">
+				  	<label class="correction" for="initials"><em>ФИО<em class="star">*</em></em></label>
+				  	<label class="correction" for="telephone"><em>Телефон<em class="star">*</em></em></label>
+				  	<label class="correction" for="address"><em>Адрес доставки<em class="star">*</em><br>(город, улица,<br> дом, подъезд,<br> квартира)</em></label>
+				  </div>
+				  <div class="omnom">
+				  	<input class="bottom_indent" type="text" id="initials" required="" spellcheck="true">
+				  	<input class="bottom_indent" type="tel" id="telephone" required="">
+				    <textarea class="textarea" id="address" required=""></textarea>
+				    <div class="text-center"><a href="#" class="calculation">РАСЧЕТ СТОИМОСТИ ДОСТАВКИ</a></div>
+				  </div>
 				</form>
-				<h5 class="text-center marrr"><a href="#" class="calculation">РАСЧЕТ СТОИМОСТИ ДОСТАВКИ</a></h5>
-				</div>
+			</div>
 				<div class="form_right">
 					<label class="correctionn" for="name"><em>Способ доставки<em class="star">*</em></em> <br></label>
 					 <form action="option1.php">
@@ -59,13 +60,13 @@
 			  </div>
 			  <div class="form_btn">
 	                <button class="form_btn__bt">
-	                    <span>
-	                        <a href="" class="form_btn__link btn_size">ПОДТВЕРДИТЬ И ЗАКАЗАТЬ</a>
-	                    </span>
+	                        ПОДТВЕРДИТЬ И ЗАКАЗАТЬ
 	                </button>
-                </div>
-			</div>
+              </div>
 		</div>
+    </form>
+
+
 		 <div class="sentence">
              <p><span>Для получения постоянных скидок и других дополнительных возможностей, пожалуйста, воспользуйтесь <a href="" class="linkform">расширенной формой заказа</a>.</span></p>
          </div>

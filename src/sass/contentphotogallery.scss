@@ -1,6 +1,5 @@
  .content_photogallery { 
 	background: transparent;
-    overflow: hidden;
     padding-bottom: 100px;
     margin-left: 275px;
     h3 {
@@ -19,5 +18,13 @@
 .titleb {
 	font-weight: bold;
 	font-size: 12px;
+	display: table-cell;
+	vertical-align: middle;
 	margin: 5px 5px;
+}
+
+.box_info {
+    display: table;
+    width: 100%;
+    height: 32px;
 }

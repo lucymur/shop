@@ -12,17 +12,10 @@
     }
 }
 
-.forma_z {
-	font-size: 15px;
-	color: #c32429;
-	font-weight: bold;
-}
 
 .formpage {
-	border-top: 4px solid black;
-	border-bottom: 1.5px solid black;
-	margin-bottom: 40px;
-	padding: 5px 0;
+	padding-bottom: 10px;
+	background: #e5e5e5;
 }
 
 .form_wrapp {
@@ -84,24 +77,9 @@
 	float: left;
 	font-size: 12px;
 	color: #333333;
-}
-
-.mar_l {
-	margin-left: 80px;
-    width: 250px;
-    height: 24px;
-}
-
-.marr_l {
-	margin-left: 50px;
-    width: 250px;
-    height:: 24px;
-}
-
-.maar_l {
-	margin-left: 6px;
-	height: 90px;
-	width: 250px;
+	margin-bottom: 18px;
+	cursor: pointer;
+	width: 115px;
 }
 
 textarea:focus {
@@ -113,11 +91,13 @@ textarea:focus {
     font-weight: bold;
     color: #464646;
     text-decoration: underline;
-    margin-left: 100px;
+    &:hover {
+    	  color: #464646;
+    }
 }
 
 .wrapp_left {
-	width: 383px;
+	width: 405px;
 	float: left;
 }
 
@@ -162,11 +142,50 @@ option:focus {
 	margin: 0;
 }
 
-.formpage_bottom {
+.marbottom {
 	margin-bottom: 10px;
+}
+
+.mar_bottom {
+	margin-bottom: 40px;
 }
 
 .wrapperr {
 	background: #e5e5e5;
 	padding-bottom: 15px;
+}
+
+.form_overlay {
+    border-top: 4px solid black;
+    border-bottom: 1.5px solid black;
+    padding: 5px 0;
+}
+
+.forma_z {
+    font-size: 15px;
+    color: #c32429;
+    font-weight: bold;
+}
+
+
+
+
+.ololo {
+	width: 115px;
+	float: left;
+}
+
+.omnom {
+	overflow: hidden;
+	margin-left: 120px;
+}
+
+.bottom_indent {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.textarea {
+	width: 100%;
+	height: 90px;
 }

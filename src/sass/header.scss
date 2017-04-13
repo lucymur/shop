@@ -54,12 +54,13 @@
 
         .back_call {
             overflow: hidden;
-            display: inline;
+            display: block;
             font-family: verdana;
             border-bottom: 2px dotted #c22328;
             padding: 3px;
             color: #c32429;
             font-weight: 200;
+            padding-bottom: 2px;
         }
 	}
 
@@ -71,7 +72,7 @@
 	}
 
 	&_contain {
-		  margin-top: 10px;
+		  margin-top: 5px;
       margin-left: 395px;
       overflow: hidden;
 	}
@@ -80,7 +81,7 @@
 .all_contacts {
 	  margin-top: 10px;
     padding: 1px 7px;
-    background: #fed900;
+    background: #8A835F;
     width: 147px;
      .all_img {
      	   margin-top: 4px;
@@ -93,7 +94,6 @@
   }
 
 .basket_field {
-
 	.shopping {
         border-bottom: 2px dotted black;
         font-size: 20px;
@@ -109,3 +109,67 @@
         font-family: verdana;
 	}
 }
+
+.entrance {
+    .entrance_link {
+      font-family: FontAwesome;
+      color: black;
+      float: right;
+      padding: 4px;
+      position: relative;
+      &:before {
+        content:  "\f09c";
+        margin-right: 5px;
+      }
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #c32429;
+        &:hover {
+          .dropdown-entrance {
+            display: block;
+          }
+        }
+      }
+    }
+ }
+
+.dropdown-entrance {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #c32429;
+  width: 260px;
+  padding: 15px;
+  height: 111px;
+  input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    padding-left: 6px;
+  }
+
+  .entrance_btn {
+    display: block;
+    float: right;
+    color: #000;
+    background-color: #fed900;
+  }
+
+  .entrance_btn-input {
+    background-color: #fed900;
+    padding: 2px 14px;
+    line-height: normal;
+    }
+}
+
+.header-wrapper_info {
+  position: relative;
+  &:hover {
+    .header-dropdown {
+      display: block;
+    }
+  }
+}
+
