@@ -361,12 +361,12 @@ textarea.form-control {
 	}
 }
 
-.paddr {
-	padding-right: 0px;
+.col-md-3:nth-child(4n+1) {
+	padding-left: 0;
 }
 
-.paddl {
-	padding-left: 0px;
+.col-md-3:nth-child(4n) {
+	padding-right: 0;
 }
 
 .info_value {
@@ -620,6 +620,15 @@ label {
 .resetwrapp {
 	text-align: center;
 	margin-top: 38px;
+}
+
+.reset_btn {
+	background:$primary ;
+	border: none;
+	font-weight: bold;
+    padding: 4px 24px;
+    outline: none;
+    font-size: 13px;
 }
 
 .to_top {

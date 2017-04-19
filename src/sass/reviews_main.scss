@@ -3,20 +3,38 @@
 	h3 {
 		font-size: 18px;
 		font-weight: bold;
-		margin-top: 0;
+		margin-top: 6px;
 	}
 }
 
 .reviews_main-sentence {
 	padding: 6px 12px;
 	display: inline-block;
-	background: $primary ;
+	//background: $primary ;
 	cursor: pointer;
 	a {
 		font-size: 14px;
 		margin-bottom: 0;
 		font-weight: bold;
-		color: #000;
+		color: #B8BB43;
+		 &:hover {
+			text-shadow: 0 1px 0 #666,
+			0 2px 0 #555,
+			1px 3px 0 #444,
+			2px 4px 0 #333,
+			3px 5px 0 #222,
+			4px 6px 1px #111,
+			0 0 5px rgba(0,0,0,.6),
+			0 1px 3px rgba(0,0,0,.5),
+			1px 3px 5px rgba(0,0,0,.4),
+			3px 5px 10px rgba(0,0,0,.3),
+			5px 10px 10px rgba(0,0,0,.2),
+			10px 20px 20px rgba(0,0,0,.1);
+             }
+			a {
+			-webkit-transition: all 0.7s ease;
+			transition: all 0.7s ease;
+			}
 		&:hover {
 			text-decoration: none;
 		}
@@ -34,7 +52,178 @@
 	text-align: right;
 }
 
-.reviews_of_people {
-	height: 200px;
-	border-bottom: 1px solid #ccc;
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 12px;
+    margin-top: 15px;
 }
+
+.comment-information {
+	
+}
+
+.comment-data {
+	width: 95px;
+	float: left;
+}
+
+.comment-body {
+	overflow: hidden;
+}
+
+.comment-number {
+	display:block;	
+	font-size: 30px;																			
+}
+
+.comment-month {
+	display:block;
+}
+
+.comment-year {
+	display: inline-block;
+    background-color: rgba(204, 204, 204, 0.4);
+    padding: 0 8px;
+}
+
+.comment-sentence {
+	float: right;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.comment-answer {
+    background: $primary;
+    padding: 4px 19px;
+}
+
+.arrow_box {
+	position: relative;
+	background: ghostwhite;
+	margin-top: 25px;
+	border: 1px solid rgba(204, 204, 204, 0.58);
+    padding: 8px 12px 20px 12px;
+}
+
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 15%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(102, 128, 213, 0);
+	border-bottom-color: ghostwhite;
+	border-width: 18px;
+	margin-left: -18px;
+}
+
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: rgba(204, 204, 204, 0.58);
+	border-width: 20px;
+	margin-left: -20px;
+}
+
+.comment-positive_reviews {
+    margin-top: 12px;
+}
+
+.comment-good_review {
+	width: 95px;
+	float: left;
+	h4 {
+		font-weight: bold;
+		font-size: 13px;
+		margin-top: 0;
+		&:before {
+			content: "\f164";
+			font-family: fontAwesome;
+			font-size: 16px;
+			margin-right: 5px;
+		}
+	}
+}
+
+.comment-positive_content {
+	overflow: hidden;
+	p {
+		line-height: normal;
+	}
+}
+
+.comment-negative_reviews {
+	margin-top: 12px;
+}
+
+.comment-negative_review {
+	width: 95px;
+	float: left;
+	h4 {
+		font-weight: bold;
+		font-size: 13px;
+		margin-top: 0;
+		&:before {
+			content: "\f165";
+			font-family: fontAwesome;
+			font-size: 16px;
+			margin-right: 5px;
+		}
+	}
+}
+
+
+.comment-negative_content {
+	overflow: hidden;
+	p {
+		line-height: normal;
+	}
+}
+
+.comment-answer_color {
+	background: rgba(204, 204, 204, 0.4);
+	padding: 4px 15px;
+}
+
+.comment-allpages {
+	margin-top: 60px;
+}
+
+.comment-page_left {
+	float: left;
+	a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 0 2px;
+    &:active {
+    	background-color: $primary;
+      }
+	}
+}
+
+.comment-page_right {
+	overflow: hidden;
+	text-align: right;
+	a {
+	  border-bottom: 1px solid black;
+	  color: black;
+	  &:hover {
+	  	text-decoration: none;
+	  }
+	  &:active {
+	  	color: red;
+	  	border-bottom: 1px solid red;
+	  }
+	}
+
+	span {
+		font-weight: normal;
+	}
+}
+

@@ -8,11 +8,39 @@
   <% for ( var index in devCssFiles ) { %>
     <link rel="stylesheet" href="<%= devCssFiles[index] %>">
   <% } %>
-
+  	<link rel="stylesheet" href="http://dvscr.ru/bonus/link.css" />
 	<link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="http://dvscr.ru/bonus/newyear/gerlyanda/style.css"/>
+	<script type="text/javascript" src="http://dvscr.ru/bonus/newyear/gerlyanda/95088.js"></script>
+	<script type="text/javascript" src="http://dvscr.ru/bonus/newyear/gerlyanda/88240.js"></script>
+	<script type="text/javascript" src="http://dvscr.ru/bonus/newyear/gerlyanda/66132.js"></script>
+
+
 	<script type="text/javascript">
 		'main header footer figure figcaption section article'
             .split(' ').forEach(function (element) { document.createElement( element )  });
 	</script>
+
+
+			<!--снег с курсора-->
+	<script type="text/javascript" src="http://dvscr.ru/bonus/cursors/snowcursor.js"></script>
+
+
+			<!--остаться на странице-->
+	<script>
+		window.onbeforeunload = function(e)
+		{
+		    var msg = 'Зачем уходить, оставайся у нас классно!';
+		    if(typeof e == "undefined")
+		        e = window.event;
+		    if(e)
+		        e.returnValue = msg;
+		        return msg;
+		}
+	</script>
+
+
+	<link href="http://dvscr.ru/popup/style.css" rel="stylesheet" type="text/css" />
+
 </head>
